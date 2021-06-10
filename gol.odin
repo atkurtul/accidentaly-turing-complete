@@ -37,9 +37,7 @@ state::proc($x,$y:uint) -> [size_of(inrange(size_of(neighbours(size_of([x]u8), s
 
 next  := NEXT;
 
-import "core:fmt"
 main::proc() {
-  fmt.println(S,O);
   foreign {
     fopen_s::proc"c"(rawptr, cstring, cstring) ---;
     fwrite::proc"c"(rawptr, int, int, rawptr) ---;
